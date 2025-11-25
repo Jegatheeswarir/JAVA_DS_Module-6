@@ -1,4 +1,5 @@
 # EX3 Write a program to count the number of digits in an integer.
+## DATE: 18.11.2025
 ## AIM:
 To write a C program to implement Tower of Hanoi
 
@@ -10,9 +11,11 @@ To write a C program to implement Tower of Hanoi
 5. Stop.
 ## Program:
 ```
-Program Count how many times a number appears in an array recursively.
-Developed by:JEGATHEESWARI R
-RegisterNumber:  212223230092
+/*
+Program to to count the number of digits in an integer
+Developed by: JEGATHEESWARI R
+RegisterNumber: 212223230092
+*/
 ```
 ```
 public class TowerOfHanoi {
