@@ -14,7 +14,6 @@ To write a JAVA program To determine the minimum value (e.g., lowest heartbeat),
 
 ## Program:
 ```
-Program Count how many times a number appears in an array recursively.
 Developed by: JEGATHEESWARI R
 RegisterNumber:  212223230092
 ```
