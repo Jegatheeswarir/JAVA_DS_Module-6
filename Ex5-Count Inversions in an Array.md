@@ -3,23 +3,45 @@
 To write a Java program  to Count the number of inversions in an array where inversion is defined as: arr[i] > arr[j] and i < j
 
 ## Algorithm
-1. Start.
-2. Read the array elements.
-3. Set inversion count to zero.
-4. Use two loops to check if arr[i] > arr[j] for all i < j and increase count.
-5. Display the total inversions and stop.
-  
+1. Start the program.
+2. Declare an integer array arr of size n.
+3. Read the value of n (number of elements).
+4. Read n elements and store them in the array arr.
+5. Initialize a variable count to 0 to store the number of inversions.
+6. Use two nested loops:
+7. Outer loop variable i from 0 to n - 1
+8. Inner loop variable j from i + 1 to n - 1
+9. For each pair (i, j), if arr[i] > arr[j] and i < j, increment count by 1.
+10. After all comparisons, print the value of count as the total number of inversions in the array.
+11. Stop the program.   
 
 ## Program:
 ```
-Program Count how many times a number appears in an array recursively.
+/*
+Program to Count the number of inversions in an array where inversion is defined as: arr[i] > arr[j] and i < j
 Developed by: JEGATHEESWARI R
-RegisterNumber:  212223230092
-```
-```
+RegisterNumber:212223230092
+*/
 import java.util.Scanner;
 
-public class InversionCount {
+public class CountInversions
+{
+    public static int countInversions(int[] arr)
+{
+        int n = arr.length;
+        int count = 0;
+        for (int i = 0; i < n - 1; i++)
+{
+            for (int j = i + 1; j < n; j++)
+{
+                if (arr[i] > arr[j]) {
+                    count++; 
+                }
+            }
+        }
+
+        return count;
+    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -28,28 +50,25 @@ public class InversionCount {
         int n = sc.nextInt();
 
         int[] arr = new int[n];
-        System.out.println("Enter array elements:");
+
+        System.out.println("Enter " + n + " elements:");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
 
-        int count = 0;
+        int inversions = countInversions(arr);
 
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = i + 1; j < n; j++) {
-                if (arr[i] > arr[j]) {
-                    count++;
-                }
-            }
-        }
+        System.out.println("Number of inversions in the array: " + inversions);
 
-        System.out.println("Number of inversions = " + count);
+        sc.close();
     }
 }
-
 ```
+
 ## Output:
-<img width="335" height="117" alt="image" src="https://github.com/user-attachments/assets/fea612e0-7833-429d-b520-fd13995d871f" />
+<img width="406" height="243" alt="image" src="https://github.com/user-attachments/assets/6c314097-77b6-4f0e-a6ac-6e5e1cc689f4" />
+
+
 
 
 ## Result:
