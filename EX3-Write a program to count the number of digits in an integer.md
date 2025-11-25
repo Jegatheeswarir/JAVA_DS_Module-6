@@ -1,14 +1,16 @@
 # EX3 Write a program to count the number of digits in an integer.
-## DATE: 18.11.2025
 ## AIM:
-To write a C program to implement Tower of Hanoi
-
+To write a java program to count the number of digits in an integer.
 ## Algorithm
-1. Start.
-2. Read the number of disks n.
-3. Call the recursive function tower(n, source, auxiliary, destination).
-4. Recursively move disks: move n-1 disks to auxiliary, move 1 disk to destination, move n-1 disks from auxiliary to destination.
-5. Stop.
+1. Start the program.
+2. Read an integer from the user.
+3. Define a recursive function countDigits() that counts digits by dividing the number by 10 each time.
+4. Base condition: if the number is 0, return 0.
+5. Recursive step: return 1 + countDigits(number / 10).
+6. Display the total count of digits.
+7. Stop the program.
+  
+
 ## Program:
 ```
 /*
@@ -16,33 +18,32 @@ Program to to count the number of digits in an integer
 Developed by: JEGATHEESWARI R
 RegisterNumber: 212223230092
 */
-```
-```
-public class TowerOfHanoi {
-    public static void tower(int n, char source, char auxiliary, char destination) {
-        if (n == 1) {
-            System.out.println("Move disk 1 from " + source + " to " + destination);
-            return;
-        }
-        tower(n - 1, source, destination, auxiliary);
-        System.out.println("Move disk " + n + " from " + source + " to " + destination);
-        tower(n - 1, auxiliary, source, destination);
+import java.util.Scanner;
+
+public class CountDigitsRecursive {
+    static int countDigits(int n) {
+        if (n == 0)
+            return 0;
+        return 1 + countDigits(n / 10);
     }
 
     public static void main(String[] args) {
-
-        int n = 3; 
-
-        System.out.println("Tower of Hanoi for " + n + " disks:");
-        tower(n, 'A', 'B', 'C');  // A = source, B = auxiliary, C = destination
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter an integer: ");
+        int n = sc.nextInt();
+        if (n == 0)
+            System.out.println("Number of digits: 1");
+        else
+            System.out.println("Number of digits: " + countDigits(Math.abs(n)));
+        sc.close();
     }
 }
 ```
 
 ## Output:
-<img width="339" height="236" alt="image" src="https://github.com/user-attachments/assets/f647ff56-7711-4329-b7b6-3ff664ef9d79" />
 
 
+<img width="341" height="158" alt="Screenshot 2025-11-13 140952" src="https://github.com/user-attachments/assets/ce3a49e9-4f98-4b49-8aac-da86361752dc" />
 
 ## Result:
 Thus, the Java program to to count the number of digits in an integer is implemented successfully.
