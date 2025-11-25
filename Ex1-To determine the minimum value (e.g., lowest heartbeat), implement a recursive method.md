@@ -3,7 +3,7 @@
 To write a JAVA program To determine the minimum value (e.g., lowest heartbeat), implement a recursive method.
 
 ## Algorithm
-Start
+1.Start
 
 2.Read the number of elements (e.g., number of heartbeat readings).
 
