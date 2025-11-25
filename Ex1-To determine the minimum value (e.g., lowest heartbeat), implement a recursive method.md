@@ -1,4 +1,5 @@
 # EX 1 You’re creating a health monitoring device which stores several sensor readings in an array. To determine the minimum value (e.g., lowest heartbeat), implement a recursive method.
+## DATE: 18.11.2025
 ## AIM:
 To write a JAVA program To determine the minimum value (e.g., lowest heartbeat), implement a recursive method.
 
@@ -7,15 +8,17 @@ To write a JAVA program To determine the minimum value (e.g., lowest heartbeat),
 2. Read n – the number of heartbeat values.
 3. Read the n heartbeat values into an array.
 4. Call the recursive method findMin(arr, index)
-5. Recursive logic 
+5. Recursive logic
 6. Display the minimum heartbeat value returned by the recursive function.
 7. Stop
 
 ## Program:
 ```
-Program Count how many times a number appears in an array recursively.
+/*
+Program To determine the minimum value (e.g., lowest heartbeat), implement a recursive method.
 Developed by: JEGATHEESWARI R
 RegisterNumber:  212223230092
+*/
 ```
 ```
 import java.util.Scanner;
@@ -51,4 +54,4 @@ public class MinValueRecursion {
 
 
 ## Result:
-Thus, the JAVA program to find the minimum value (e.g., lowest heartbeat), implement a recursive method has implemented successfully.
+Thus the JAVA program to find the minimum value (e.g., lowest heartbeat), implement a recursive method has implemented successfully
